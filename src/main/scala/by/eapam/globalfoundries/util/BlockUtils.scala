@@ -66,7 +66,7 @@ object BlockUtils {
   }
 
   /*
-  * Just sort list of blocks by timeStart field
+  * Just sort stream of blocks by timeStart field
   */
   def sortByTimeStart(listBlocks: Stream[PriorityBlock]): Stream[PriorityBlock] = {
     listBlocks.sortBy(block => block.startTime)
